@@ -1,1 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+    background-color: #F2F2F2 !important;
+    /* font-family: 'Comic Sans MS', cursive, sans-serif; */
+}
+.card {
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px #ddd;
+    min-height: 5rem;
+    padding: 2rem;
+    padding-top: 0.5rem;
+}
+
+.bold {
+    font-weight: 500;
+}
+
+.transparent-card {
+    background-color: transparent;
+    box-shadow: 0px 0px 0px transparent;
+}
+
+input, input:focus {
+    background-color: transparent;
+    outline-width: 0 !important;
+    border: 1px solid grey;
+}
+
+
+.pointer {
+    cursor: pointer;
+}
+
+
+.no-margin-padding {
+    padding: 0px;
+    margin: 0px;
+}
