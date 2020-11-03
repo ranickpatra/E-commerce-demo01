@@ -1,0 +1,29 @@
+<div class="site-head persian-green">
+
+    <div class="row">
+        <!-- Logo area -->
+        <div class="col l1 offset-l1 m2 s12 red">
+            LOGO
+        </div>
+
+        <!-- search box -->
+        <div class="col l7 blue">
+            search box
+        </div>
+
+        <div class="col l3">
+            option area
+        </div> 
+
+    </div>
+
+    <!-- categoty row  -->
+    <div class="row categoty-item-container">
+        <div class="col l12 offset-l1">
+            <span class="categoty-item" *ngFor="let item of categoryItems;">
+                <a class="black-text" href="#">{{item.name}}<i class="material-icons" *ngIf="item.items">keyboard_arrow_down</i> </a>
+            </span>
+        </div>
+    </div>
+
+</div>
