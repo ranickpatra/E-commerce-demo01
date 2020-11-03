@@ -1,5 +1,25 @@
 <div class="row">
-    <div class="col xl10 offset-xl1 l12 m12 s12">
-        fgdg
+    <!-- main body -->
+    <div class="col xl8 offset-xl2 l12 m12 s12">
+
+        <div class="row">
+            <div class="col l6 m12 s12" *ngFor="let item of [1,1]">
+                <app-product-card2></app-product-card2>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col xl3 l3 m4 s6" *ngFor="let item of [1,1,1,1]">
+                <app-product-card1></app-product-card1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col xl3 l3 m4 s6" *ngFor="let item of [1,1]">
+                <app-product-card1></app-product-card1>
+            </div>
+        </div>
+
+
     </div>
 </div>
