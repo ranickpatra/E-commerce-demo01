@@ -37,3 +37,16 @@ input, input:focus {
     padding: 0px;
     margin: 0px;
 }
+
+
+.section-heading {
+    border-bottom: 2px solid #274654;
+}
+
+.section-heading span {
+    background-color: #37667c;
+    color: white;
+    padding: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+}

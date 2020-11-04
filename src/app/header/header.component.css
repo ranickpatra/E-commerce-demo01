@@ -48,9 +48,6 @@
     color: #aaa;
 }
 
-.options>span {
-    padding: 10px;
-}
 
 .options .option-count {
     background-color: white;
@@ -60,10 +57,17 @@
     padding-right: 7px;
     border-radius: 50%;
     position: relative;
-    top: -20px;
+    top: -25px;
 }
 
-.options .option-text {
+.options {
     margin: auto;
     width: 50%;
+}
+
+.option-text {
+    position: relative;
+    width: 80% !important;
+    top: -25px;
+    left: 30px
 }
