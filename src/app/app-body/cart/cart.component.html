@@ -4,51 +4,96 @@
     <!-- main body -->
     <div class="col xl8 offset-xl2 l12 m12 s12">
 
-        <div class="row">
-            <div class="col s12">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Product</th>
-                            <th>Price</th>
-                            <th>Quantity</th>
-                            <th>Subtotal</th>
-                        </tr>
-                    </thead>
-
-                    <tbody>
-                        <tr>
-                            <td>Alvin</td>
-                            <td>Eclair</td>
-                            <td>$0.87</td>
-                        </tr>
-                        <tr>
-                            <td>Alan</td>
-                            <td>Jellybean</td>
-                            <td>$3.76</td>
-                        </tr>
-                        <tr>
-                            <td>Jonathan</td>
-                            <td>Lollipop</td>
-                            <td>$7.00</td>
-                        </tr>
-                    </tbody>
-                </table>
+        <div class="row hide-on-med-and-down">
+            <div class="col l5 table-head">
+                Product
             </div>
+            <div class="col l2 table-head">
+                Price
+            </div>
+
+            <div class="col l3 table-head">
+                Quantity
+            </div>
+
+            <div class="col l2 table-head">
+                Subtotal
+            </div>
+
         </div>
 
         <div class="row">
-            <div class="col l4" *ngFor="let item of ['FEATURES PRODUCTS','RECENT PRODUCTS','BEST SELLING']">
-                <div class="section-heading">
-                    <h6><span>{{item}}</span></h6>
+            <div class="col l5 m12 s12">
+
+                <div class="row hide-on-small-only">
+                    <div class="col l4 m4 full-height">
+                        <img src="assets/img/watch.png" alt="Headphone">
+                    </div>
+                    <div class="col l8 m8 full-height valign-wrapper">
+                        <span>Product Name</span>
+                    </div>
                 </div>
-                <br>
-                <div class="row" *ngFor="let item2 of [1,1,1]">
-                    <div class="col s12">
-                        <app-product-card4></app-product-card4>
+
+                <div class="row hide-on-med-and-up center-align">
+                    <div class="col s12 full-height">
+                        <img src="assets/img/watch.png" alt="Headphone">
+                    </div>
+                    <div class="col s12 full-height valign-wrapper">
+                        <span>Product Name</span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col l2 m4 s6">
+                <div class="row">
+                    <div class="col s8 full-height valign-wrapper">
+                        <span class="hide-on-large-only bold">Price: &nbsp;</span> <span>$800</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col l3 m4 s3 offset-s3">
+                <div class="row">
+                    <div class="col l6 m6 s12 full-height valign-wrapper">
+                        <div class="row">
+                            <div class="col s6">
+                                <input class="browser-default quantity" type="number" min="1" max="100" name="quantity"
+                                    value="1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col l2 m4 s12">
+                <div class="row">
+                    <div class="col l12 m12 s12 full-height valign-wrapper">
+                        <span class="hide-on-large-only bold">Subtotal: &nbsp;</span> $800
                     </div>
                 </div>
             </div>
         </div>
+
+        <div class="row">
+            <div class="col l5 m5 s12">
+                <div class="coupon-container">
+                    <input class="browser-default coupon-text" type="text" name="coupon Code"
+                        placeholder="Enter your coupon code here">
+                    <div class="right-align">
+                        <button class="coupon-btn">Apply Coupon Code</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col l3 offset-l4 m3 offset-m4 s12">
+                <br class="hide-on-med-and-up">
+                <button class="checkout-btn burnt-sienna white-text bold">Proceed to Checkout</button>
+            </div>
+        </div>
+
+        <div class="v-space"></div>
+
+        <!-- feature group -->
+        <app-featture-group></app-featture-group>
+        
     </div>
 </div>

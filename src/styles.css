@@ -50,3 +50,8 @@ input, input:focus {
     padding-left: 16px;
     padding-right: 16px;
 }
+
+
+.v-space {
+    height: 100px;
+}
