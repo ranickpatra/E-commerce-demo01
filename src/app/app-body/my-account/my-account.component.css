@@ -1,0 +1,12 @@
+.collection {
+    border: none;
+}
+
+.collection  li {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.v-space {
+    height: 100px;
+}
