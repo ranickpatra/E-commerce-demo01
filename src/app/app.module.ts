@@ -21,6 +21,7 @@ import { MyAccountComponent } from './app-body/my-account/my-account.component';
 import { CartComponent } from './app-body/cart/cart.component';
 import { GroupsComponent } from './app-body/groups/groups.component';
 import { FeattureGroupComponent } from './app-body/groups/featture-group/featture-group.component';
+import { SearchComponent } from './header/search/search.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import { FeattureGroupComponent } from './app-body/groups/featture-group/feattur
     CartComponent,
     GroupsComponent,
     FeattureGroupComponent,
+    SearchComponent,
   ],
   imports: [
     BrowserModule,
