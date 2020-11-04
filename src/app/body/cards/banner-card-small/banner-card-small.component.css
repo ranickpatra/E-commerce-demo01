@@ -1,0 +1,23 @@
+.banner-container {
+    height: 200px;
+    padding: 10px;
+    background-color: #EFF5F5;
+}
+
+.full-height {
+    height: 180px;
+}
+
+img {
+    width: 100%;
+}
+
+hr {
+    border: 1px solid red;
+    width: 20%;
+    margin-left: 0px;
+}
+
+.v-space {
+    height: 30%;
+}
