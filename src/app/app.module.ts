@@ -19,6 +19,8 @@ import { WishListComponent } from './app-body/wish-list/wish-list.component';
 import { WishListCardComponent } from './app-body/cards/wish-list-card/wish-list-card.component';
 import { MyAccountComponent } from './app-body/my-account/my-account.component';
 import { CartComponent } from './app-body/cart/cart.component';
+import { GroupsComponent } from './app-body/groups/groups.component';
+import { FeattureGroupComponent } from './app-body/groups/featture-group/featture-group.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +41,8 @@ import { CartComponent } from './app-body/cart/cart.component';
     WishListCardComponent,
     MyAccountComponent,
     CartComponent,
+    GroupsComponent,
+    FeattureGroupComponent,
   ],
   imports: [
     BrowserModule,
