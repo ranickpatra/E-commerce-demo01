@@ -1,0 +1,52 @@
+.product-container {
+    min-height: 300px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+}
+
+.product-img {
+    height: 200px;
+    margin-left: 20px;
+    padding-top: 8%;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #aaa;
+    font-size: 20px;
+}
+
+.sale-price {
+    font-size: 22px;
+    font-weight: 500;
+    margin-left: 1rem;
+}
+
+.stocks-available {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+.circle {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 0.4rem;
+    padding-left: 0.4rem;
+    position: relative;
+    margin-top: -2.5rem;
+    margin-left: 0.8rem;
+    display: inline-block;
+}
+
+.start-circle {
+    margin-top: 0px;
+}

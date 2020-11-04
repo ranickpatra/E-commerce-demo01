@@ -1,0 +1,25 @@
+.banner-container {
+    height: 200px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.full-height {
+    height: 180px;
+}
+
+img {
+    width: 90%;
+    max-width: 160px;
+    max-height: 80%;
+}
+
+hr {
+    border: 1px solid red;
+    width: 20%;
+    margin-left: 0px;
+}
+
+.v-space {
+    height: 30%;
+}

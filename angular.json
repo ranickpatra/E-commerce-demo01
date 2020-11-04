@@ -25,10 +25,12 @@
             ],
             "styles": [
               "src/materialize.css",
+              "node_modules/@mdi/font/css/materialdesignicons.min.css",
               "src/styles.css",
               "src/colors.css"
             ],
             "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
               "node_modules/materialize-css/dist/js/materialize.js"
             ]
           },
@@ -97,6 +99,7 @@
               "src/colors.css"
             ],
             "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
               "node_modules/materialize-css/dist/js/materialize.js"
             ]
           }
@@ -106,6 +109,7 @@
           "options": {
             "tsConfig": [
               "tsconfig.app.json",
+              "node_modules/@mdi/font/css/materialdesignicons.min.css",
               "tsconfig.spec.json",
               "e2e/tsconfig.json"
             ],
