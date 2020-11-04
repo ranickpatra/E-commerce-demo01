@@ -9,6 +9,7 @@ import { ProductCard1Component } from './body/cards/product-card1/product-card1.
 import { ProductCard2Component } from './body/cards/product-card2/product-card2.component';
 import { ProductCard3Component } from './body/cards/product-card3/product-card3.component';
 import { BannerCardSmallComponent } from './body/cards/banner-card-small/banner-card-small.component';
+import { BannerCardSmallFullWidthComponent } from './body/cards/banner-card-small-full-width/banner-card-small-full-width.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { BannerCardSmallComponent } from './body/cards/banner-card-small/banner-
     ProductCard1Component,
     ProductCard2Component,
     ProductCard3Component,
-    BannerCardSmallComponent
+    BannerCardSmallComponent,
+    BannerCardSmallFullWidthComponent
   ],
   imports: [
     BrowserModule,
