@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { CartComponent } from './app-body/cart/cart.component';
 import { HomeComponent } from './app-body/home/home.component';
 import { MyAccountComponent } from './app-body/my-account/my-account.component';
 import { WishListComponent } from './app-body/wish-list/wish-list.component';
@@ -7,6 +8,7 @@ import { WishListComponent } from './app-body/wish-list/wish-list.component';
 const routes: Routes = [
   {path: '', component: HomeComponent, pathMatch: 'full' },
   {path: 'wish-list', component: WishListComponent },
+  {path: 'cart', component: CartComponent },
   {path: 'my-account', component: MyAccountComponent },
   {path: '**', redirectTo: '',}
 ];
