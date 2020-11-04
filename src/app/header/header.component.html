@@ -12,23 +12,33 @@
         </div>
 
         <div class="col l4 m4 s8 options">
-            <span>
+            <div class="col s3">
                 <a class="black-text" [routerLink]="['/wish-list']">
                     <i class="material-icons">favorite_border</i>
                     <span class="option-count">1</span>
-                    <span class="option-text"> Wishlist</span>
+                    <div class="option-text"> Wishlist</div>
                 </a>
-            </span>
-            <span>
+            </div>
+
+            <div class="col s3">
                 <a class="black-text" href="#">
                     <i class="material-icons">shopping_cart</i>
                     <span class="option-count">1</span>
-                    <span class="option-text"> My Cart</span>
+                    <div class="option-text"> My Cart</div>
                 </a>
-            </span>
-        </div> 
+            </div>
 
-        
+            <div class="col s3">
+                <a class="black-text" [routerLink]="['/my-account']">
+                    <div class="row">
+                        <i class="material-icons">person</i>
+                        <div class="option-text"> My Account</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
 
         <!-- search box -->
         <div class="col s12 hide-on-med-and-up blue">
@@ -40,7 +50,7 @@
     <!-- categoty row  -->
     <div class="row categoty-item-container hide-on-small-only">
         <div class="col l11 offset-l1">
-            
+
             <span class="categoty-item">
                 <a class="black-text" href="#">Electronics<i class="material-icons">keyboard_arrow_down</i> </a>
             </span>
@@ -60,13 +70,14 @@
             <span class="categoty-item">
                 <a class="black-text" href="#">Baby & kids<i class="material-icons">keyboard_arrow_down</i> </a>
             </span>
-            
+
             <span class="categoty-item">
                 <a class="black-text" href="#">Home & Furniture<i class="material-icons">keyboard_arrow_down</i> </a>
             </span>
-            
+
             <span class="categoty-item">
-                <a class="black-text" href="#">Sports, Books & More<i class="material-icons">keyboard_arrow_down</i> </a>
+                <a class="black-text" href="#">Sports, Books & More<i class="material-icons">keyboard_arrow_down</i>
+                </a>
             </span>
 
             <span class="categoty-item">

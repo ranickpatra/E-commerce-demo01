@@ -1,0 +1,21 @@
+<div class="row">
+    <!-- main body -->
+    <div class="col xl8 offset-xl2 l12 m12 s12">
+        <p>my-account works!</p>
+
+
+        <div class="row">
+            <div class="col l4" *ngFor="let item of ['FEATURES PRODUCTS','RECENT PRODUCTS','BEST SELLING']">
+                <div class="section-heading">
+                    <h6><span>{{item}}</span></h6>
+                </div>
+                <br>
+                <div class="row" *ngFor="let item2 of [1,1,1]">
+                    <div class="col s12">
+                        <app-product-card4></app-product-card4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
