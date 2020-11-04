@@ -15,7 +15,7 @@
             </div>
         </div>
 
-
+        
         <div class="row">
             <div class="col s12">
                 <div class="section-heading">
@@ -45,6 +45,22 @@
             </div>
         </div>
 
+
+        <!-- Banners -->
+        <div class="row">
+            <div class="col l5 m12 s12">
+                <app-banner-card-medium></app-banner-card-medium>
+            </div>
+
+            <div class="col l7 m12 s12">
+                <div class="row">
+                    <div class="col l6 m6 s12" *ngFor="let item of [1,1,1,1]">
+                        <app-banner-card-small></app-banner-card-small>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
         
         <div class="row">
             <div class="col s12">
@@ -63,6 +79,20 @@
         <div class="row">
             <div class="col l6 m12 s12" *ngFor="let item of [1,1]">
                 <app-product-card2></app-product-card2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12">
+                <app-banner-card-small-full-width></app-banner-card-small-full-width>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12">
+                <div class="section-heading">
+                    <h6><span>TOP CATEGORIES</span></h6>
+                </div>
             </div>
         </div>
 

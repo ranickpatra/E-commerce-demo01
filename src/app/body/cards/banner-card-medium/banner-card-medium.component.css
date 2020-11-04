@@ -1,0 +1,9 @@
+.banner-container {
+    height: 420px;
+    padding: 10px;
+    background-image: url("/assets/img/banner10.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 20px;
+}

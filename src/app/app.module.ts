@@ -10,6 +10,7 @@ import { ProductCard2Component } from './body/cards/product-card2/product-card2.
 import { ProductCard3Component } from './body/cards/product-card3/product-card3.component';
 import { BannerCardSmallComponent } from './body/cards/banner-card-small/banner-card-small.component';
 import { BannerCardSmallFullWidthComponent } from './body/cards/banner-card-small-full-width/banner-card-small-full-width.component';
+import { BannerCardMediumComponent } from './body/cards/banner-card-medium/banner-card-medium.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { BannerCardSmallFullWidthComponent } from './body/cards/banner-card-smal
     ProductCard2Component,
     ProductCard3Component,
     BannerCardSmallComponent,
-    BannerCardSmallFullWidthComponent
+    BannerCardSmallFullWidthComponent,
+    BannerCardMediumComponent
   ],
   imports: [
     BrowserModule,
