@@ -18,6 +18,7 @@ import { AppBodyComponent } from './app-body/app-body.component';
 import { WishListComponent } from './app-body/wish-list/wish-list.component';
 import { WishListCardComponent } from './app-body/cards/wish-list-card/wish-list-card.component';
 import { MyAccountComponent } from './app-body/my-account/my-account.component';
+import { CartComponent } from './app-body/cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { MyAccountComponent } from './app-body/my-account/my-account.component';
     WishListComponent,
     WishListCardComponent,
     MyAccountComponent,
+    CartComponent,
   ],
   imports: [
     BrowserModule,
