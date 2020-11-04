@@ -1,0 +1,33 @@
+.product-container {
+    height: 160px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+}
+
+.product-img {
+    height: 100%;
+    margin-left: 20px;
+    padding-top: 8%;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+}
+
+.product-detail {
+    margin-top: 10px;
+    margin-bottom: -10px;
+}
+
+.sale > .original-price {
+    color: #999;
+    font-size: 20px;
+    text-decoration: line-through;
+}
+
+.sale > .sale-price {
+    color: #f40;
+    font-size: 20px;
+}
