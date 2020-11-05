@@ -5,12 +5,10 @@
         </div>
         <div class="col l9 m8 s5 product-detail">
             <h6 class="grey-text text-darken-2">Title of product</h6>
-            <span class="m-badge right-align persian-green" data-badge-caption="">4.5 <i class="material-icons">star</i></span> (200)
+            <app-product-ratting-view [ratting]="3.7" [numberOfRatting]="8075" ></app-product-ratting-view>
             <br>
             <br>
-            <span class="price grey-text text-darken-3">$500</span> 
-            <span class="price-old ">$1000</span> 
-            <span class="percent-off persian-green-text">50% off</span>
+            <app-price-component1 [salePrice]="500" [realPrice]="700" ></app-price-component1>
         </div>
         <div class="col l1 m1 s2 right-align delete-section">
             <i class="material-icons pointer">delete</i>

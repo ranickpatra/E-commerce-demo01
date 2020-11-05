@@ -12,4 +12,8 @@ export class ProductCard1Component implements OnInit {
   ngOnInit(): void {
   }
 
+  getRandomInt(): number  {
+    return Math.floor(Math.random() * Math.floor(10000));
+  }
+
 }

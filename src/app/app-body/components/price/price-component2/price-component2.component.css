@@ -1,0 +1,19 @@
+.price {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.price-old {
+    position: relative;
+    text-decoration: line-through;
+    margin-left: 5px;
+    font-size: 14px;
+    top: -1px;
+}
+
+.explanation {
+    font-size: 13px;
+    margin-left: 5px;
+    position: relative;
+    top: -2px;
+}
