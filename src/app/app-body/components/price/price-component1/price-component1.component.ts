@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-price-component1',
@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PriceComponent1Component implements OnInit {
 
+  @Input() realPrice: number;
+  @Input() salePrice: number;
+  saleRate: number;
+
   constructor() { }
 
   ngOnInit(): void {
+    if (this.salePrice )
+      this.saleRate = this.salePrice / this.realPrice;
   }
 
 }

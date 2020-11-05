@@ -1,3 +1,10 @@
-<span class="price grey-text text-darken-3">$500</span>
-<span class="price-old ">$1000</span>
-<span class="percent-off persian-green-text">50% off</span>
+<ng-container *ngIf="salePrice; else noSalePrice">   
+    <span class="price grey-text text-darken-3">${{salePrice}}</span>
+    <span class="price-old">${{realPrice}}</span>
+    <span class="explanation persian-green-text">{{saleRate * 100 | number: '1.0-0' }}% off</span>
+</ng-container>
+<ng-template #noSalePrice>
+    <span class="price grey-text text-darken-3">${{realPrice}}</span>
+    <span class="explanation">only</span>
+</ng-template>
+

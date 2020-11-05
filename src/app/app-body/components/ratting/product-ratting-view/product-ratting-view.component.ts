@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-product-ratting-view',
@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductRattingViewComponent implements OnInit {
 
+  @Input() ratting: number;
+  @Input() numberOfRatting: number;
+  
   constructor() { }
 
   ngOnInit(): void {
