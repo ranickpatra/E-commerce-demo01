@@ -1,0 +1,17 @@
+.search-container {
+    width: 100%;
+    background-color: white;
+    height: 40px;
+    position: relative;
+    top: -10px;
+    border-radius: 20px;
+    border: none;
+    font-size: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.search-text {
+    position: relative;
+    margin-top: 5px;
+}
