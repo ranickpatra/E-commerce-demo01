@@ -23,6 +23,8 @@ import { GroupsComponent } from './app-body/groups/groups.component';
 import { FeattureGroupComponent } from './app-body/groups/featture-group/featture-group.component';
 import { SearchComponent } from './header/search/search.component';
 import { ComponentsComponent } from './app-body/components/components.component';
+import { PriceComponent } from './app-body/components/price/price.component';
+import { PriceComponent1Component } from './app-body/components/price/price-component1/price-component1.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +49,8 @@ import { ComponentsComponent } from './app-body/components/components.component'
     FeattureGroupComponent,
     SearchComponent,
     ComponentsComponent,
+    PriceComponent,
+    PriceComponent1Component,
   ],
   imports: [
     BrowserModule,

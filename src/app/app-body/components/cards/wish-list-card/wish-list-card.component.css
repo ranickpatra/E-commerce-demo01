@@ -33,25 +33,6 @@ img {
     font-size: 12px;
 }
 
-.price {
-    font-size: 25px;
-    font-weight: 500;
-}
-
-.price-old {
-    position: relative;
-    text-decoration: line-through;
-    margin-left: 10px;
-    font-size: 18px;
-    top: -4px;
-}
-
-.percent-off {
-    margin-left: 10px;
-    position: relative;
-    top: -5px;
-}
-
 .delete-section {
     padding: 10px;
     padding-right: 20px;
