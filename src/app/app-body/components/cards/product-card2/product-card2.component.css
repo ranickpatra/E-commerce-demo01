@@ -1,7 +1,8 @@
 .product-container {
-    height: 200px;
+    min-height: 200px;
     border: 1px solid #eee;
     border-radius: 10px;
+    margin-bottom: 10px;
 }
 
 .product-img {
