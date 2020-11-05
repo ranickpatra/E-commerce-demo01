@@ -14,4 +14,5 @@
 .search-text {
     position: relative;
     margin-top: 5px;
+    border: none;
 }
