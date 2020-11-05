@@ -1,11 +1,11 @@
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-price-component1',
-  templateUrl: './price-component1.component.html',
-  styleUrls: ['./price-component1.component.css']
+  selector: 'app-price-component2',
+  templateUrl: './price-component2.component.html',
+  styleUrls: ['./price-component2.component.css']
 })
-export class PriceComponent1Component implements OnInit {
+export class PriceComponent2Component implements OnInit {
 
   @Input() realPrice: number;
   @Input() salePrice: number;
