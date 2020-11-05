@@ -19,20 +19,6 @@ img {
     color: #999;
 }
 
-.m-badge {
-    font-size: 12px;
-    font-weight: bold;
-    padding: 5px;
-    border-radius: 5px;
-    color: white;
-}
-
-.m-badge > i {
-    position: relative;
-    top: 1px;
-    font-size: 12px;
-}
-
 .delete-section {
     padding: 10px;
     padding-right: 20px;

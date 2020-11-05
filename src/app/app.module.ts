@@ -25,6 +25,8 @@ import { SearchComponent } from './header/search/search.component';
 import { ComponentsComponent } from './app-body/components/components.component';
 import { PriceComponent } from './app-body/components/price/price.component';
 import { PriceComponent1Component } from './app-body/components/price/price-component1/price-component1.component';
+import { RattingComponent } from './app-body/components/ratting/ratting.component';
+import { ProductRattingViewComponent } from './app-body/components/ratting/product-ratting-view/product-ratting-view.component';
 
 @NgModule({
   declarations: [
@@ -51,6 +53,8 @@ import { PriceComponent1Component } from './app-body/components/price/price-comp
     ComponentsComponent,
     PriceComponent,
     PriceComponent1Component,
+    RattingComponent,
+    ProductRattingViewComponent,
   ],
   imports: [
     BrowserModule,
