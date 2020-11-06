@@ -31,6 +31,7 @@ import { PriceComponent2Component } from './app-body/components/price/price-comp
 import { CheckoutComponent } from './app-body/checkout/checkout.component';
 import { ShopComponent } from './app-body/shop/shop.component';
 import { ProductComponent } from './app-body/product/product.component';
+import { ProductImageComponent } from './app-body/product/product-image/product-image.component';
 
 @NgModule({
   declarations: [
@@ -63,6 +64,7 @@ import { ProductComponent } from './app-body/product/product.component';
     CheckoutComponent,
     ShopComponent,
     ProductComponent,
+    ProductImageComponent,
   ],
   imports: [
     BrowserModule,
