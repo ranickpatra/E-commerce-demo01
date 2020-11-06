@@ -86,7 +86,9 @@
 
             <div class="col l3 offset-l4 m3 offset-m4 s12">
                 <br class="hide-on-med-and-up">
-                <button class="checkout-btn burnt-sienna white-text bold">Proceed to Checkout</button>
+                <a [routerLink]="[ '/checkout' ]">
+                    <button class="checkout-btn burnt-sienna white-text bold pointer">Proceed to Checkout</button>
+                </a>
             </div>
         </div>
 
