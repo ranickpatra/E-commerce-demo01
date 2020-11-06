@@ -29,6 +29,8 @@ import { RattingComponent } from './app-body/components/ratting/ratting.componen
 import { ProductRattingViewComponent } from './app-body/components/ratting/product-ratting-view/product-ratting-view.component';
 import { PriceComponent2Component } from './app-body/components/price/price-component2/price-component2.component';
 import { CheckoutComponent } from './app-body/checkout/checkout.component';
+import { ShopComponent } from './app-body/shop/shop.component';
+import { ProductComponent } from './app-body/product/product.component';
 
 @NgModule({
   declarations: [
@@ -59,6 +61,8 @@ import { CheckoutComponent } from './app-body/checkout/checkout.component';
     ProductRattingViewComponent,
     PriceComponent2Component,
     CheckoutComponent,
+    ShopComponent,
+    ProductComponent,
   ],
   imports: [
     BrowserModule,
