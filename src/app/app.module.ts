@@ -35,6 +35,7 @@ import { ProductImageComponent } from './app-body/product/product-image/product-
 import { ProductDetailsComponent } from './app-body/product/product-details/product-details.component';
 import { ProductRattingViewFullComponent } from './app-body/components/ratting/product-ratting-view-full/product-ratting-view-full.component';
 import { FooterComponent } from './footer/footer.component';
+import { ProductVariant1Component } from './app-body/product/product-variant1/product-variant1.component';
 
 @NgModule({
   declarations: [
@@ -71,6 +72,7 @@ import { FooterComponent } from './footer/footer.component';
     ProductDetailsComponent,
     ProductRattingViewFullComponent,
     FooterComponent,
+    ProductVariant1Component,
   ],
   imports: [
     BrowserModule,
