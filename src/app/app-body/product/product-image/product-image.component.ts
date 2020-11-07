@@ -1,5 +1,6 @@
-import { Component, OnInit, ViewChildren } from '@angular/core';
-import  M from "materialize-css";
+import { Component, OnInit, ViewChild, ViewChildren } from '@angular/core';
+// import  M from "materialize-css";
+import * as M from "materialize-css/dist/js/materialize";
 
 @Component({
   selector: 'app-product-image',
@@ -8,7 +9,7 @@ import  M from "materialize-css";
 })
 export class ProductImageComponent implements OnInit {
 
-  @ViewChildren('slider') sliders;
+  @ViewChild('root') root;
 
   constructor() { }
 
@@ -18,14 +19,7 @@ export class ProductImageComponent implements OnInit {
   ngAfterViewInit(): void  {
 
     // M.Slider.init(elems, options);
-    // M.Slider.init(this.sliders);
-    let sliders = []
-    this.sliders.forEach(slider => {
-      sliders.push(slider.nativeElement);
-    })
-    // console.log(sliders);
-    // M.slider.init(sliders);
-    console.log(M)
+    let slider = M.Slider.init(this.root.nativeElement.querySelectorAll('.slider'));
   }
 
 }
