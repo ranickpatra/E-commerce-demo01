@@ -1,0 +1,14 @@
+
+.tab > a {
+    color: #777;
+}
+
+.tab > a.active {
+    color: black;
+    font-weight: 500;
+}
+
+.tab > a.active:focus {
+    background-color: transparent;
+}
+
