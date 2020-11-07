@@ -32,6 +32,9 @@ import { CheckoutComponent } from './app-body/checkout/checkout.component';
 import { ShopComponent } from './app-body/shop/shop.component';
 import { ProductComponent } from './app-body/product/product.component';
 import { ProductImageComponent } from './app-body/product/product-image/product-image.component';
+import { ProductDetailsComponent } from './app-body/product/product-details/product-details.component';
+import { ProductRattingViewFullComponent } from './app-body/components/ratting/product-ratting-view-full/product-ratting-view-full.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -65,6 +68,9 @@ import { ProductImageComponent } from './app-body/product/product-image/product-
     ShopComponent,
     ProductComponent,
     ProductImageComponent,
+    ProductDetailsComponent,
+    ProductRattingViewFullComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
