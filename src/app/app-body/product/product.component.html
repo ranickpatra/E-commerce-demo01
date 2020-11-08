@@ -17,7 +17,7 @@
                     <li class="tab col xl2 l2 m2 s3"><a class="active" href="#description-full">Description</a></li>
                     <li class="tab col xl2 l2 m2 s3"><a href="#review">Review</a></li>
                 </ul>
-                <div id="description-full" class="col s12">
+                <div id="description-full" class="col s12 tab-content">
                     Every item is a vital part of a woman's wardrobe. The result? Cool, easy, chic looks with youthful elegance and unmistakable signature style. All the beautiful pieces are made in Italy and manufactured with the greatest attention. Now Fashion extends to a range of accessories including shoes, hats, belts and more!
                     <br>
                     Every item is a vital part of a woman's wardrobe. The result? Cool, easy, chic looks with youthful elegance and unmistakable signature style. All the beautiful pieces are made in Italy and manufactured with the greatest attention. Now Fashion extends to a range of accessories including shoes, hats, belts and more!
@@ -27,10 +27,24 @@
                     Every item is a vital part of a woman's wardrobe. The result? Cool, easy, chic looks with youthful elegance and unmistakable signature style. All the beautiful pieces are made in Italy and manufactured with the greatest attention. Now Fashion extends to a range of accessories including shoes, hats, belts and more!
                     <br>
                 </div>
-                <div id="review" class="col s12">Test 2</div>
+                <div id="review" class="col s12 tab-content">
+                    Be the first to write your review !
+                </div>
             </div>
         </div>
 
+        <div class="v-space"></div>
 
+        <div class="row">
+            <div class="col xl2 l3 m4 s6" *ngFor="let item of [1,1,1,1,1,1,1]">
+                <app-product-card1></app-product-card1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12">
+                <app-featture-group></app-featture-group>
+            </div>
+        </div>
     </div>
 </div>
