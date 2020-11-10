@@ -32,6 +32,14 @@ import { CheckoutComponent } from './app-body/checkout/checkout.component';
 import { ShopComponent } from './app-body/shop/shop.component';
 import { ProductComponent } from './app-body/product/product.component';
 import { ProductImageComponent } from './app-body/product/product-image/product-image.component';
+import { ProductDetailsComponent } from './app-body/product/product-details/product-details.component';
+import { ProductRattingViewFullComponent } from './app-body/components/ratting/product-ratting-view-full/product-ratting-view-full.component';
+import { FooterComponent } from './footer/footer.component';
+import { ProductVariant1Component } from './app-body/product/product-variant1/product-variant1.component';
+import { PriceComponent3Component } from './app-body/components/price/price-component3/price-component3.component';
+import { BuyComponentComponent } from './app-body/product/buy-component/buy-component.component';
+import { ProductsComponent } from './app-body/components/products/products.component';
+import { RelatedProductsComponent } from './app-body/components/products/related-products/related-products.component';
 
 @NgModule({
   declarations: [
@@ -65,6 +73,14 @@ import { ProductImageComponent } from './app-body/product/product-image/product-
     ShopComponent,
     ProductComponent,
     ProductImageComponent,
+    ProductDetailsComponent,
+    ProductRattingViewFullComponent,
+    FooterComponent,
+    ProductVariant1Component,
+    PriceComponent3Component,
+    BuyComponentComponent,
+    ProductsComponent,
+    RelatedProductsComponent,
   ],
   imports: [
     BrowserModule,
