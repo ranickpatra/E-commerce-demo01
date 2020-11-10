@@ -38,6 +38,8 @@ import { FooterComponent } from './footer/footer.component';
 import { ProductVariant1Component } from './app-body/product/product-variant1/product-variant1.component';
 import { PriceComponent3Component } from './app-body/components/price/price-component3/price-component3.component';
 import { BuyComponentComponent } from './app-body/product/buy-component/buy-component.component';
+import { ProductsComponent } from './app-body/components/products/products.component';
+import { RelatedProductsComponent } from './app-body/components/products/related-products/related-products.component';
 
 @NgModule({
   declarations: [
@@ -77,6 +79,8 @@ import { BuyComponentComponent } from './app-body/product/buy-component/buy-comp
     ProductVariant1Component,
     PriceComponent3Component,
     BuyComponentComponent,
+    ProductsComponent,
+    RelatedProductsComponent,
   ],
   imports: [
     BrowserModule,
