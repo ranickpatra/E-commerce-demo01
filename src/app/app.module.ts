@@ -40,6 +40,7 @@ import { PriceComponent3Component } from './app-body/components/price/price-comp
 import { BuyComponentComponent } from './app-body/product/buy-component/buy-component.component';
 import { ProductsComponent } from './app-body/components/products/products.component';
 import { RelatedProductsComponent } from './app-body/components/products/related-products/related-products.component';
+import { ShopSideBarComponent } from './app-body/shop/shop-side-bar/shop-side-bar.component';
 
 @NgModule({
   declarations: [
@@ -81,6 +82,7 @@ import { RelatedProductsComponent } from './app-body/components/products/related
     BuyComponentComponent,
     ProductsComponent,
     RelatedProductsComponent,
+    ShopSideBarComponent,
   ],
   imports: [
     BrowserModule,
