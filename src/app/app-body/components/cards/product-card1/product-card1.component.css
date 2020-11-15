@@ -1,6 +1,7 @@
 .product-container {
     max-width: 270px;
-    height: 360px;
+    /* height: 360px; */
+    height: auto;
     margin-top: 1rem;
     margin-bottom: 1rem;
     border: 1px solid #eee;
@@ -9,7 +10,8 @@
 
 .mobile-container {
     max-width: 200px;
-    height: 340px;
+    /* height: 340px; */
+    height: auto;
     margin-top: 1rem;
     margin-bottom: 1rem;
     border: 1px solid #eee;
