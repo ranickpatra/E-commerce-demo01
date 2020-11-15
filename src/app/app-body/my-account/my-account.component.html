@@ -1,6 +1,6 @@
-<div class="row">
+<div class="row hide">
     <!-- main body -->
-    <div class="col xl8 offset-xl2 l12 m12 s12">
+    <div class="col xl10 offset-xl1 l12 m12 s12">
 
         <div class="row">
             <div class="col l4">
@@ -74,25 +74,51 @@
             </div>
 
             <div class="col l8 green">
-                
+
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+<div class="row" #root>
+    <!-- main body -->
+    <div class="col xl10 offset-xl1 l12 m12 s12">
+
+        <div class="row">
+            <div class="col m10 offset-m1 s12">
+                <ul class="tabs tabs-fixed-width ">
+                    <li class="tab"><a class="active" href="#dashboard">Dashboard</a></li>
+                    <li class="tab"><a href="#orders">Orders</a></li>
+                    <li class="tab"><a href="#address">Address</a></li>
+                    <li class="tab"><a href="#payment-methods">Payment Methods</a></li>
+                    <li class="tab"><a href="#account-details">Account Details</a></li>
+                </ul>
+                <div id="dashboard" class="col s12">
+                    <h5>Dashboard</h5>
+                </div>
+                <div id="orders" class="col s12">
+                    <h5>Orders</h5>
+                </div>
+                <div id="address" class="col s12">
+                    <h5>Address</h5>
+                </div>
+                <div id="payment-methods" class="col s12">
+                    <h5>Payment Methods</h5>
+                </div>
+                <div id="account-details" class="col s12">
+                    <h5>Account Details</h5>
+                </div>
+
+                <p>Demo site dose not have this contents</p>
+
             </div>
         </div>
 
         <div class="v-space"></div>
 
 
-        <div class="row">
-            <div class="col l4" *ngFor="let item of ['FEATURES PRODUCTS','RECENT PRODUCTS','BEST SELLING']">
-                <div class="section-heading">
-                    <h6><span>{{item}}</span></h6>
-                </div>
-                <br>
-                <div class="row" *ngFor="let item2 of [1,1,1]">
-                    <div class="col s12">
-                        <app-product-card4></app-product-card4>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <!-- feature group -->
+        <app-featture-group></app-featture-group>
     </div>
-</div>

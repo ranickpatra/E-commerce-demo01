@@ -1,0 +1,9 @@
+.pagination>li {
+  border-radius: 50%;
+}
+
+.pagination>.active>a {
+  height: 30px;
+  width: 30px;
+  text-align: center;
+}

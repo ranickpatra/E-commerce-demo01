@@ -1,0 +1,15 @@
+.col {
+    margin-bottom: 10px;
+}
+
+.title {
+    font-weight: 500;
+}
+
+.description {
+    color: #888;
+}
+
+.v-space {
+    height: 40px;
+}

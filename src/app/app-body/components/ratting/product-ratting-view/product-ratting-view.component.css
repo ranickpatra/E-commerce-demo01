@@ -1,0 +1,17 @@
+.m-badge {
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+}
+
+.m-badge > i {
+    position: relative;
+    top: 1px;
+    font-size: 12px;
+}
+
+.ratting-count {
+    margin-left: 0.5rem;
+}

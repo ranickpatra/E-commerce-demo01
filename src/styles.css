@@ -4,6 +4,7 @@ body {
     /* background-color: #F2F2F2 !important; */
     /* font-family: 'Comic Sans MS', cursive, sans-serif; */
 }
+
 .card {
     border-radius: 8px;
     box-shadow: 0px 2px 8px #ddd;
@@ -21,23 +22,21 @@ body {
     box-shadow: 0px 0px 0px transparent;
 }
 
-input, input:focus {
+input,
+input:focus {
     background-color: transparent;
     outline-width: 0 !important;
     border: 1px solid grey;
 }
 
-
 .pointer {
     cursor: pointer;
 }
-
 
 .no-margin-padding {
     padding: 0px;
     margin: 0px;
 }
-
 
 .section-heading {
     border-bottom: 2px solid #274654;
@@ -49,4 +48,14 @@ input, input:focus {
     padding: 8px;
     padding-left: 16px;
     padding-right: 16px;
+}
+
+.v-space {
+    height: 100px;
+}
+
+hr {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    ;
 }

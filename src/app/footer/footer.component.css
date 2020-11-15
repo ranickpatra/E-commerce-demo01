@@ -1,0 +1,22 @@
+.footer-container {
+    /* height: 500px; */
+    padding-bottom: 50px;
+    width: 100%;
+    position: relative;
+    bottom: 0px;
+}
+
+.collection {
+    background: transparent;
+    border: none;
+}
+
+.collection > li, .collection > li > a {
+    background: transparent;
+    border: none;
+    color: #fff;
+}
+
+.collection > li > a:hover {
+    color: #5a7c8a;
+}

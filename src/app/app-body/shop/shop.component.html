@@ -1,0 +1,89 @@
+<div class="row no-margin-padding">
+    <!-- main body -->
+    <div class="col l2 no-margin-padding hide-on-med-and-down">
+
+        <app-shop-side-bar></app-shop-side-bar>
+
+    </div>
+
+    <ng-container *ngIf="filterState; else bodyTemplate">
+        <div class="col l2 no-margin-padding hide-on-large-only">
+            <div class="row">
+                <div class="col s12">
+                    <app-shop-side-bar></app-shop-side-bar>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <button class="btn orange-yellow-crayola darken-2 grey-text text-darken-3" type="button" (click)="showFilter(false)">Apply</button>
+                </div>
+            </div>
+        </div>
+    </ng-container>
+    <ng-template #bodyTemplate>
+        <div class="col l10">
+            <div class="row">
+                <div class="col l9 m12 s12">
+                    <h5>results for "demo"</h5>
+                </div>
+                <div class="col l3 m12 s12">
+                    <div class="row">
+                        <div class="col l12 m10 s9">
+                            <h6 class="right-align hide-on-med-and-down">Showing {{items.length}} results</h6>
+                            <h6 class=" hide-on-large-only show-on-medium-and-down">Showing {{items.length}} results</h6>
+                        </div>
+                        <div class="col m2 s3 hide-on-large-only">
+                            <button class="btn orange-yellow-crayola darken-2 grey-text text-darken-3" type="button" (click)="showFilter(true)">Filter</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col xl2 l3 m4 s6" *ngFor="let item of items">
+                    <app-product-card1></app-product-card1>
+                </div>
+            </div>
+    
+            <div class="row">
+                <div class="col s12 center-align">
+                    <ul class="pagination">
+                        <li [ngClass]="{'disabled': currentPage == 1}">
+                            <ng-container *ngIf="currentPage != 1; else prevPageNavigation">
+                                <a [routerLink]="['/shop', currentPage-1]"><i class="material-icons">chevron_left</i></a>
+                            </ng-container>
+                            <ng-template #prevPageNavigation>
+                                <a><i class="material-icons">chevron_left</i></a>
+                            </ng-template>
+                        </li>                    
+                        <li *ngFor="let item of pages" [ngClass]="item == currentPage ? 'active' : ''">
+                            <a target="_self" [routerLink]="['/shop', item]" >{{item}}</a>
+                        </li>
+                        <li [ngClass]="{'disabled': currentPage == numOfPages}">
+                            <ng-container *ngIf="currentPage != numOfPages; else nextPageNavigation">
+                                <a [routerLink]="['/shop', currentPage+1]"><i class="material-icons">chevron_right</i></a>
+                            </ng-container>
+                            <ng-template #nextPageNavigation>
+                                <a><i class="material-icons">chevron_right</i></a>
+                            </ng-template>
+                            
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="v-space"></div>
+    
+            <div class="row">
+                <div class="col s12">
+                    <app-featture-group></app-featture-group>
+                </div>
+            </div>
+        </div>
+    </ng-template>
+    
+
+   
+
+    
+</div>

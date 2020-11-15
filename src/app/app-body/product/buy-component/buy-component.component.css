@@ -1,0 +1,19 @@
+label[for=qty] {
+    font-size: 16px;
+    font-weight: 400;
+    position: relative;
+    top: -2rem;
+    left: 2rem;
+}
+
+input[type=text], input[type=number] {
+    border-radius: 5px;
+    color: #888;
+    width: 6rem;
+    height: 2rem;
+    padding-left: 0.8rem;
+}
+
+button {
+    border-radius: 50px;
+}

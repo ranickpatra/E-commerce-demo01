@@ -1,0 +1,8 @@
+.image-container {
+    width: 100%;
+}
+
+img {
+    background-size: contain !important;
+    background-repeat: no-repeat;
+}
