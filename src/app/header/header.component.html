@@ -1,105 +1,17 @@
-<div class="site-head orange-yellow-crayola hide">
-
-    <div class="row">
-        <!-- Logo area -->
-        <div class="col l1 offset-l1 m2 s4">
-            LOGO
-        </div>
-
-        <!-- search box -->
-        <div class="col l6 m6 hide-on-small-only">
-            <app-search></app-search>
-        </div>
-
-        <div class="col l4 m4 s8 user-optons">
-            <div class="col s3">
-                <a class="black-text" [routerLink]="['/wish-list']">
-                    <i class="material-icons">favorite_border</i>
-                    <span class="option-count">1</span>
-                    <div class="option-text"> Wishlist</div>
-                </a>
-            </div>
-
-            <div class="col s3">
-                <a class="black-text" [routerLink]="['/cart']">
-                    <i class="material-icons">shopping_cart</i>
-                    <span class="option-count">1</span>
-                    <div class="option-text"> My Cart</div>
-                </a>
-            </div>
-
-            <div class="col s3">
-                <a class="black-text" [routerLink]="['/my-account']">
-                    <div class="row">
-                        <i class="material-icons">person</i>
-                        <div class="option-text"> My Account</div>
-                    </div>
-                </a>
-            </div>
-        </div>
-
-
-
-        <!-- search box -->
-        <div class="col s12 hide-on-med-and-up">
-            <app-search></app-search>
-        </div>
-
+<div class="row header-static-banner">
+    <div class="col s12 orange-yellow-crayola darken-2 black-text">
+        This is a demo product all functionalities ar not working here
     </div>
-
-    <!-- categoty row  -->
-    <div class="row categoty-item-container hide-on-small-only">
-        <div class="col l11 offset-l1">
-
-            <span class="categoty-item">
-                <a class="black-text" href="#">Electronics<i class="material-icons">keyboard_arrow_down</i> </a>
-            </span>
-
-            <span class="categoty-item">
-                <a class="black-text" href="#">TVs & Appliances<i class="material-icons">keyboard_arrow_down</i> </a>
-            </span>
-
-            <span class="categoty-item">
-                <a class="black-text" href="#">Men<i class="material-icons">keyboard_arrow_down</i> </a>
-            </span>
-
-            <span class="categoty-item">
-                <a class="black-text" href="#">Women<i class="material-icons">keyboard_arrow_down</i> </a>
-            </span>
-
-            <span class="categoty-item">
-                <a class="black-text" href="#">Baby & kids<i class="material-icons">keyboard_arrow_down</i> </a>
-            </span>
-
-            <span class="categoty-item">
-                <a class="black-text" href="#">Home & Furniture<i class="material-icons">keyboard_arrow_down</i> </a>
-            </span>
-
-            <span class="categoty-item">
-                <a class="black-text" href="#">Sports, Books & More<i class="material-icons">keyboard_arrow_down</i>
-                </a>
-            </span>
-
-            <span class="categoty-item">
-                <a class="black-text" href="#">Flight<i class="material-icons">keyboard_arrow_down</i> </a>
-            </span>
-
-            <span class="categoty-item">
-                <a class="black-text" href="#">Offer Zone<i class="material-icons">keyboard_arrow_down</i> </a>
-            </span>
-
-        </div>
-    </div>
-
 </div>
 
-<div #root>
+
+<div class="site-head" #root>
     <nav class="nav-extended orange-yellow-crayola darken-2">
 
         <!-- header menues -->
         <div class="nav-wrapper">
-            <a href="#" class="brand-logo black-text">Logo</a>
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <a href="/" class="brand-logo black-text">Logo</a>
+            <a href="/" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li>
                     <app-search></app-search>
