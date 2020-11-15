@@ -20,3 +20,7 @@
 .collection > li > a:hover {
     color: #5a7c8a;
 }
+
+.logo {
+    margin-top: 3rem;
+}
