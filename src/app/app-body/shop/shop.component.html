@@ -25,15 +25,27 @@
 
         <div class="row">
             <div class="col s12 center-align">
-                {{currentPage}}
                 <ul class="pagination">
-                    <li class="disabled"><a><i class="material-icons">chevron_left</i></a></li>
-                    
+                    <li [ngClass]="{'disabled': currentPage == 1}">
+                        <ng-container *ngIf="currentPage != 1; else prevPageNavigation">
+                            <a [routerLink]="['/shop', currentPage-1]"><i class="material-icons">chevron_left</i></a>
+                        </ng-container>
+                        <ng-template #prevPageNavigation>
+                            <a><i class="material-icons">chevron_left</i></a>
+                        </ng-template>
+                    </li>                    
                     <li *ngFor="let item of pages" [ngClass]="item == currentPage ? 'active' : ''">
-                        <!-- <a target="_self" (click)="gotoNewPage(item)" >{{item}}</a> -->
                         <a target="_self" [routerLink]="['/shop', item]" >{{item}}</a>
                     </li>
-                    <li class="waves-effect"><a><i class="material-icons">chevron_right</i></a></li>
+                    <li [ngClass]="{'disabled': currentPage == numOfPages}">
+                        <ng-container *ngIf="currentPage != numOfPages; else nextPageNavigation">
+                            <a [routerLink]="['/shop', currentPage+1]"><i class="material-icons">chevron_right</i></a>
+                        </ng-container>
+                        <ng-template #nextPageNavigation>
+                            <a><i class="material-icons">chevron_right</i></a>
+                        </ng-template>
+                        
+                    </li>
                 </ul>
             </div>
         </div>

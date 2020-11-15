@@ -9,8 +9,8 @@ import { threadId } from 'worker_threads';
 })
 export class ShopComponent implements OnInit {
 
-  currentPage = 2;
-  numOfPages = 10;
+  currentPage: number = 2;
+  numOfPages = 8;
   pages: Array<number> = [];
   items = []
 
@@ -21,10 +21,12 @@ export class ShopComponent implements OnInit {
 
     let firstTime = true;
     activatedRoute.params.subscribe(params => {
-      let page = params.page;
-      this.currentPage = page ? page as unknown as number : 1;
-      if(!firstTime)
-        this.ngOnInit();
+      let page: number = parseInt(params.page);
+      this.currentPage = page ? page : 1;
+      if(!firstTime) {
+        // this.ngOnInit();
+        window.location.reload();
+      }
       firstTime = false;
     });
 
