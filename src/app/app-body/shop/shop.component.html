@@ -5,4 +5,45 @@
         <app-shop-side-bar></app-shop-side-bar>
 
     </div>
+
+    <div class="col l10">
+        <div class="row">
+            <div class="col l9 m8 s12">
+                <h5>results for "phone"</h5>
+            </div>
+            <div class="col l3 m4 s12">
+                <h6 class="right-align hide-on-small-only">Showing 12 results</h6>
+                <h6 class=" hide-on-med-and-up">Showing 12 results</h6>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col xl2 l3 m4 s6" *ngFor="let item of items">
+                <app-product-card1></app-product-card1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 center-align">
+                {{currentPage}}
+                <ul class="pagination">
+                    <li class="disabled"><a><i class="material-icons">chevron_left</i></a></li>
+                    
+                    <li *ngFor="let item of pages" [ngClass]="item == currentPage ? 'active' : ''">
+                        <!-- <a target="_self" (click)="gotoNewPage(item)" >{{item}}</a> -->
+                        <a target="_self" [routerLink]="['/shop', item]" >{{item}}</a>
+                    </li>
+                    <li class="waves-effect"><a><i class="material-icons">chevron_right</i></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="v-space"></div>
+
+        <div class="row">
+            <div class="col s12">
+                <app-featture-group></app-featture-group>
+            </div>
+        </div>
+    </div>
 </div>

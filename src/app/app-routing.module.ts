@@ -14,6 +14,7 @@ const routes: Routes = [
   {path: 'cart', component: CartComponent },
   {path: 'checkout', component: CheckoutComponent },
   {path: 'shop', component: ShopComponent },
+  {path: 'shop/:page', component: ShopComponent },
   {path: 'product', component: ProductComponent },
   {path: 'my-account', component: MyAccountComponent },
   {path: '**', redirectTo: '',}
@@ -21,7 +22,7 @@ const routes: Routes = [
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes, {onSameUrlNavigation: "reload"})
   ],
   exports: [RouterModule]
 })
