@@ -10,7 +10,7 @@
 
         <!-- header menues -->
         <div class="nav-wrapper">
-            <a href="/" class="brand-logo black-text">Logo</a>
+            <a href="/" class="brand-logo"><img class="materialboxed" src="/assets/img/logo.png" alt="Demo Site" ></a>
             <a href="/" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li>
@@ -110,6 +110,34 @@
     <ul class="sidenav orange-yellow-crayola" id="mobile-demo">
         <li class="sidebar-options">
             <div class="row">
+                <a class="black-text" [routerLink]="['/my-account']">
+
+                    <div class="col s3">
+                        <i class="material-icons">person</i>
+
+                    </div>
+                    <div class="col s8">
+                        My Account
+                    </div>
+                </a>
+            </div>
+        </li>
+        <li class="sidebar-options">
+            <div class="row">
+                <a class="black-text" [routerLink]="['/my-account']">
+
+                    <div class="col s3">
+                        <i class="material-icons">shopping_basket</i>
+
+                    </div>
+                    <div class="col s8">
+                        Orders
+                    </div>
+                </a>
+            </div>
+        </li>
+        <li class="sidebar-options">
+            <div class="row">
                 <a class="black-text" [routerLink]="['/wish-list']">
                     <div class="col s3">
                         <i class="material-icons">favorite_border</i>
@@ -134,21 +162,7 @@
                 </a>
             </div>
         </li>
-        <li class="sidebar-options">
-            <div class="row">
-                <a class="black-text" [routerLink]="['/my-account']">
-
-                    <div class="col s3">
-                        <i class="material-icons">person</i>
-
-                    </div>
-                    <div class="col s8">
-                        My Account
-                    </div>
-                </a>
-            </div>
-        </li>
-
+        
         <li class="sidebar-options">
             <div class="row">
                 <a class="black-text" [routerLink]="['/shop']">
