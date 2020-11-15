@@ -101,6 +101,9 @@
             <a href="#" class="brand-logo black-text">Logo</a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li>
+                    <app-search></app-search>
+                </li>
                 <li class="user-options">
                     <a class="black-text tooltipped" data-position="bottom" data-tooltip="Wishlist"
                         [routerLink]="['/wish-list']">
@@ -133,8 +136,8 @@
         <!-- bottom menu -->
         <div class="nav-content">
             <div class="row">
-                <div class="col s12">
-                    <ul class="tabs tabs-transparent hide-on-med-and-down">
+                <div class="col s12 hide-on-med-and-down">
+                    <ul class="tabs tabs-transparent">
                         <li class="tab">
                             <a class="black-text" [routerLink]="['/shop']">Electronics<i
                                     class="material-icons">keyboard_arrow_down</i> </a>
@@ -184,6 +187,9 @@
                         </li>
 
                     </ul>
+                </div>
+                <div class="col s12 hide-on-large-only">
+                    <app-search></app-search>
                 </div>
             </div>
         </div>
