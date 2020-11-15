@@ -83,3 +83,7 @@ nav {
 .sidenav {
     padding-top: 2rem;
 }
+
+.brand-logo > img {
+    height: 50px;
+}
