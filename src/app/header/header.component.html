@@ -1,4 +1,4 @@
-<div class="site-head orange-yellow-crayola">
+<div class="site-head orange-yellow-crayola hide">
 
     <div class="row">
         <!-- Logo area -->
@@ -11,7 +11,7 @@
             <app-search></app-search>
         </div>
 
-        <div class="col l4 m4 s8 options">
+        <div class="col l4 m4 s8 user-optons">
             <div class="col s3">
                 <a class="black-text" [routerLink]="['/wish-list']">
                     <i class="material-icons">favorite_border</i>
@@ -90,5 +90,206 @@
 
         </div>
     </div>
+
+</div>
+
+<div #root>
+    <nav class="nav-extended orange-yellow-crayola darken-2">
+
+        <!-- header menues -->
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo black-text">Logo</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li>
+                    <app-search></app-search>
+                </li>
+                <li class="user-options">
+                    <a class="black-text tooltipped" data-position="bottom" data-tooltip="Wishlist"
+                        [routerLink]="['/wish-list']">
+                        <i class="material-icons">favorite_border</i>
+                        <span class="option-count">1</span>
+                        <!-- <div class="option-text"> Wishlist</div> -->
+                    </a>
+                </li>
+                <li class="user-options">
+                    <a class="black-text tooltipped" data-position="bottom" data-tooltip="My Cart"
+                        [routerLink]="['/cart']">
+                        <i class="material-icons">shopping_cart</i>
+                        <span class="option-count">1</span>
+                        <!-- <div class="option-text"> My Cart</div> -->
+                    </a>
+                </li>
+                <li class="user-options">
+                    <a class="black-text tooltipped" data-position="bottom" data-tooltip="My Account"
+                        [routerLink]="['/my-account']">
+                        <div class="row">
+                            <i class="material-icons">person</i>
+                            <!-- <div class="option-text"> My Account</div> -->
+                        </div>
+                    </a>
+                </li>
+                <li></li>
+            </ul>
+        </div>
+
+        <!-- bottom menu -->
+        <div class="nav-content">
+            <div class="row">
+                <div class="col s12 hide-on-med-and-down">
+                    <ul class="tabs tabs-transparent">
+                        <li class="tab">
+                            <a class="black-text" [routerLink]="['/shop']">Electronics<i
+                                    class="material-icons">keyboard_arrow_down</i> </a>
+                        </li>
+
+                        <li class="tab">
+                            <a class="black-text" [routerLink]="['/shop']">TVs & Appliances<i
+                                    class="material-icons">keyboard_arrow_down</i>
+                            </a>
+                        </li>
+
+                        <li class="tab">
+                            <a class="black-text" [routerLink]="['/shop']">Men<i
+                                    class="material-icons">keyboard_arrow_down</i> </a>
+                        </li>
+
+                        <li class="tab">
+                            <a class="black-text" [routerLink]="['/shop']">Women<i
+                                    class="material-icons">keyboard_arrow_down</i> </a>
+                        </li>
+
+                        <li class="tab">
+                            <a class="black-text" [routerLink]="['/shop']">Baby & kids<i
+                                    class="material-icons">keyboard_arrow_down</i> </a>
+                        </li>
+
+                        <li class="tab">
+                            <a class="black-text" [routerLink]="['/shop']">Home & Furniture<i
+                                    class="material-icons">keyboard_arrow_down</i>
+                            </a>
+                        </li>
+
+                        <li class="tab">
+                            <a class="black-text" [routerLink]="['/shop']">Sports, Books & More<i
+                                    class="material-icons">keyboard_arrow_down</i>
+                            </a>
+                        </li>
+
+                        <li class="tab">
+                            <a class="black-text" [routerLink]="['/shop']">Flight<i
+                                    class="material-icons">keyboard_arrow_down</i> </a>
+                        </li>
+
+                        <li class="tab">
+                            <a class="black-text" [routerLink]="['/shop']">Offer Zone<i
+                                    class="material-icons">keyboard_arrow_down</i> </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col s12 hide-on-large-only">
+                    <app-search></app-search>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <ul class="sidenav orange-yellow-crayola" id="mobile-demo">
+        <li class="sidebar-options">
+            <div class="row">
+                <a class="black-text" [routerLink]="['/wish-list']">
+                    <div class="col s3">
+                        <i class="material-icons">favorite_border</i>
+                        <span class="option-count">1</span>
+                    </div>
+                    <div class="col s8">
+                        Wish List
+                    </div>
+                </a>
+            </div>
+        </li>
+        <li class="sidebar-options">
+            <div class="row">
+                <a class="black-text" [routerLink]="['/cart']">
+                    <div class="col s3">
+                        <i class="material-icons">shopping_cart</i>
+                        <span class="option-count">1</span>
+                    </div>
+                    <div class="col s8">
+                        My Cart
+                    </div>
+                </a>
+            </div>
+        </li>
+        <li class="sidebar-options">
+            <div class="row">
+                <a class="black-text" [routerLink]="['/my-account']">
+
+                    <div class="col s3">
+                        <i class="material-icons">person</i>
+
+                    </div>
+                    <div class="col s8">
+                        My Account
+                    </div>
+                </a>
+            </div>
+        </li>
+
+        <li class="sidebar-options">
+            <div class="row">
+                <a class="black-text" [routerLink]="['/shop']">
+
+                    <div class="col s3">
+                        <i class="material-icons">shopping_bag</i>
+                    </div>
+                    <div class="col s8">
+                        Shop
+                    </div>
+                </a>
+            </div>
+        </li>
+
+        <li>
+            <hr>
+        </li>
+
+        <li>
+            <a class="black-text" [routerLink]="['/shop']">Electronics</a>
+        </li>
+
+        <li>
+            <a class="black-text" [routerLink]="['/shop']">TVs & Appliances</a>
+        </li>
+
+        <li>
+            <a class="black-text" [routerLink]="['/shop']">Men</a>
+        </li>
+
+        <li>
+            <a class="black-text" [routerLink]="['/shop']">Women</a>
+        </li>
+
+        <li>
+            <a class="black-text" [routerLink]="['/shop']">Baby & kids</a>
+        </li>
+
+        <li>
+            <a class="black-text" [routerLink]="['/shop']">Home & Furniture</a>
+        </li>
+
+        <li>
+            <a class="black-text" [routerLink]="['/shop']">Sports, Books & More</a>
+        </li>
+
+        <li>
+            <a class="black-text" [routerLink]="['/shop']">Flight </a>
+        </li>
+
+        <li>
+            <a class="black-text" [routerLink]="['/shop']">Offer Zone</a>
+        </li>
+    </ul>
 
 </div>

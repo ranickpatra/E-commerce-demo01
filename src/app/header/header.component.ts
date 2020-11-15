@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import * as M from 'materialize-css/dist/js/materialize';
 
 @Component({
   selector: 'app-header',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
+
+  @ViewChild('root') root;
 
   categoryItems: any = [
     {
@@ -41,6 +44,11 @@ export class HeaderComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  ngAfterViewInit() {
+    M.Sidenav.init(this.root.nativeElement.querySelectorAll('.sidenav')); // sidebar nav
+    M.Tooltip.init(this.root.nativeElement.querySelectorAll('.tooltipped'));  // tooltip
   }
 
 }
