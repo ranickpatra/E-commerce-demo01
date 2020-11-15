@@ -10,3 +10,25 @@
 .v-space {
     height: 100px;
 }
+
+
+.tab > a {
+    color: #777;
+}
+
+.tabs .tab a {
+    background-color: transparent;
+}
+
+.tab > a.active {
+    color: black;
+    font-weight: 500;
+}
+
+.tab > a.active:focus {
+    background-color: transparent;
+}
+
+.tab-content {
+    padding-top: 2rem;
+}
